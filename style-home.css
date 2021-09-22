@@ -1,0 +1,138 @@
+body {
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+  background-image: url("img/bg.svg");
+  background-size: cover;
+  background-color: #000000;
+  background-repeat: no-repeat;
+}
+
+.container {
+  text-align: center;
+  padding: 10px;
+}
+
+.input {
+  width: max-content;
+  padding: 10px;
+  margin: 10px auto;
+}
+
+.page-title {
+  color: rgb(255, 255, 255);
+  margin: 30px auto;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #da1e26,
+    0 0 70px #da1e26, 0 0 80px #da1e26, 0 0 100px #da1e26, 0 0 150px #da1e26;
+}
+
+.page-subtitle {
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.page-logo {
+  width: 200px;
+  margin: auto;
+}
+
+.alura-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  background-color: #da1e26;
+  padding: 10px;
+  box-shadow: 0 0 1em #da4a51;
+}
+
+/** Box-Filmes */
+.meus-filmes {  
+    width: 80%;
+    height: max-content;
+    background: #1e1e1e98;
+    border-radius: 6px;
+    margin: 0 auto;
+    padding: 10px;
+    box-shadow: 0 0 1px #fff, 0 0 10px #da1e26
+  }
+
+
+#minha-lista {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#minha-lista img {
+  margin: 10px;
+  max-height: 250px;
+}
+
+.form-wrapper {
+  margin: 0 0 15px;
+}
+
+.form-wrapper button {
+  border: 0;
+  color: #ffffff;
+  background: #da1e26;
+  font-weight: bold;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-wrapper button:hover {
+  opacity: 0.8;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/** Rodapé */
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    background-color:  #1e1e1e98;
+    padding: 30px;
+    width: max-content;
+    border-radius: 6px;
+    
+    
+  }
+  
+  li {
+    display: inline-block;
+  }
+  
+  li a {
+    color: #fff;
+    padding: 10px;
+  }
+  
+  .git:hover,
+  .link:hover,
+  .twitter:hover {
+    color: #da1e26;
+    border: none;
+    text-shadow: 0 0 1em #da1e26;
+  }
+  
+  /** Responsividade */
+  @media (max-width: 1040px) {
+    .page-subtitle {
+      font-size: 25px;
+    }
+
+    .input {
+        margin-bottom: 5px;
+    }
+  }
